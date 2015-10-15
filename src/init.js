@@ -22,12 +22,19 @@ $(document).ready(function() {
 
     // make a dancer with a random position
 
-    var dancer = dancerMakerFunction(
+    var dancer = new dancerMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
-      Math.random() * 1000
+      Math.random() * 300
     );
     $('body').append(dancer.$node);
+    dancers.push(dancer);
+    $(dancer.$node).on('mouseover', dancer.showUglyBeyonce.bind(dancer));
+
   });
+  
+  $(".lineUp").on("click", lineUp);
+  $(".pairUp").on("click", pairUp);
+
 });
 
