@@ -5,7 +5,7 @@ var BeadedBathrobeDancer = function(top, left, timeBetweenSteps) {
   this.dance = "other"
 
   Dancer.call(this, top, left, timeBetweenSteps);
-  this.$node.addClass("bad");
+  this.$node.addClass("beadedBathrobe");
 
 };
 

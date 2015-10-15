@@ -6,7 +6,7 @@ var SingleDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
 
   this.$node.addClass("blinky");
-  this.$node.append('<img src=\'src/singleLadies/image1.jpg\'>');
+  // this.$node.append('<img src=\'src/singleLadies/image1.jpg\'>');
 
 };
 
